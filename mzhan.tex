@@ -1,0 +1,388 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TEX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt,oneside]{article}
+%\documentclass[letterpaper,10pt,oneside]{article}
+
+% Do not stop on errors during compilation.
+\nonstopmode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVTitle}{Minshu Zhan's CV for company X}
+\newcommand{\CVNote}{CV compiled on {\today} for company X}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={John Doe},
+pdfsubject={http://www.example.com/johndoe},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{Minshu Zhan}
+
+\begin{subtitle}
+5607 Heartwood Circle, Rockville, MD 20855
+\par
+\href{mailto:mzhan@mit.edu}
+{mzhan@mit.edu}
+\,\BulletSymbol\,
++1\,(202)\,999-5564
+%\,\BulletSymbol\,
+%\href{http://www.example.com/johndoe}
+%{http://www.example.com/johndoe}
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Academic Projects}
+{Research}
+{PDF:Research}
+
+\textbf{LabROSA}, Columbia University  \par
+Project: Content-based collaborative filtering for music recommendation
+\BulletItem 
+\BulletItem
+\BulletItem  
+
+\textbf{ALFA group}, MIT CSAIL
+\par Project: Program Auto-tuning Through Population-based Stochastic Search
+\BulletItem
+Implemented and optimized a set of discrete-domain stochastic search functionalities for the program auto-tuning system \emph{OpenTuner}, including genetic algorithm, particle swarm optimization, and differential evolution
+
+\textbf{Personal Robots Group}, MIT Media Lab
+\par Project: interactive audio sample retrieval  
+\BulletItem performed vector quantization on 8 thousand audio samples, 
+\BulletItem effective retrieval through interaction
+\BulletItem Designed interface
+ 
+
+\textbf{Speech Communication Group},
+MIT RLE
+\hfill Cambridge, MA
+\par
+Undergraduate Research Student
+\hfill
+\DatestampYM{2012}{01} --
+\DatestampYM{2013}{06}
+\begin{detail}
+\BulletItem
+Project:
+Modelling Acoustic Landmarks for Speech Recognition	
+\BulletItem
+Contribution:
+Designed features 
+Implemented a tree-based classifier for predicting behaviors of \emph{acoustic landmarks} in speech production based on prosodic context. 
+Confirmed
+ \end{detail}
+
+\SmallEntryGap
+
+\textbf{Future Urban Mobility Group}, Singapore-MIT Alliance for Res. \& Tech.
+\hfill Singapore
+\par
+Undergraduate Research Student
+\hfill
+\DatestampYM{2011}{06} --
+\DatestampYM{2011}{08}
+\begin{detail}
+\BulletItem
+Project:
+Integrated Transportation Simulation Platform: SimMobility
+\BulletItem
+Contribution: Developed a large-scale GIS map interaction tool.
+\end{detail}
+
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\textbf{Columbia University}
+\hfill New York, NY
+\par
+Ph.D in Signal Processing 
+\hfill
+\DatestampYM{2014}{09} --
+present
+\begin{detail}
+\BulletItem
+Research areas:
+music information retrieval, machine learning
+\BulletItem
+Relevant coursework:
+Foundations of Graphical Models, Speech \& Audio Processing and Recognition
+\end{detail}
+\SmallEntryGap
+
+\textbf{Massachusetts Institute of Technology}
+\hfill Cambridge, MA
+\par
+M.Eng. in
+Computer Science
+\hfill
+\DatestampYM{2013}{09} --
+\DatestampYM{2014}{06}
+\begin{detail}
+\BulletItem
+Thesis:
+Program Auto-tuning Through Population-based Stochastic Search
+\BulletItem
+Concentration: Artificial Intelligence
+\BulletItem
+Relevant coursework: 
+
+\BulletItem
+Cumulative GPA: 4.5 / 5.0
+\end{detail}
+
+B.S. in Computer Science
+\hfill
+\DatestampYM{2009}{09} --
+\DatestampYM{2013}{06}
+\begin{detail}
+\BulletItem
+Cumulative GPA: 4.3 / 5.0
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section
+{Work Experience}
+{Other Work Experience}
+{PDF:OtherWorkExperience}
+
+\textbf{Introduction to EECS},
+MIT \hfill Cambridge, MA
+\par
+Lab Assistant
+\hfill
+\DatestampYM{2013}{02} --
+\DatestampYM{2013}{05}
+% detail?
+
+\EntryGap
+
+\textbf{Digital Communication System},
+MIT \hfill Cambridge, MA
+\par
+Teaching Assistant
+\hfill
+\DatestampYM{2012}{09} --
+\DatestampYM{2012}{12}
+% detail?
+
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\section
+{Publication}
+{Publication}
+{PDF:Publications}
+
+\href{http://ismir2015.uma.es/articles/290_Paper.pdf}
+{D. Liang, \underline{M. Zhan}, \& Ellis, D. (2015).
+Content-Aware Collaborative Music Recommendation Using Pre-trained Neural Networks. Proceedings of \textit{International Society for Music Information Retrieval},
+Málaga, Spain, 
+\DatestampYM{2015}{10}.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACADEMIC HONORS & AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Awards \& \newline Scholarships}
+{Academic Honors \& Awards}
+{PDF:AcademicHonorsAwards}
+
+\textbf{Integrative Graduate Education and Research Traineeship}, Columbia University
+\hfill
+\DatestampYM{2014}{09} 
+
+\SmallEntryGap
+
+\textbf{EECS Undergraduate Research and Innovations Scholar}, MIT
+\hfill
+\DatestampYM{2012}{09}
+
+\SmallEntryGap
+
+\textbf{Singapore-MIT Undergraduate Research Fellowship}, MIT
+\hfill
+\DatestampYM{2011}{06}
+
+
+
+
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\textbf{Programming}
+\par
+Fluent: Python, MATLAB, {\LaTeX}, Java  \par
+Familiar: C, C++, JavaScript, Shell, SQL, HTML, Scheme
+
+\EntryGap
+
+\textbf{Natural Language}
+\par
+Chinese (fluent)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Campus Activities}
+{Campus Activities}
+{PDF:CampusActivities}
+
+\textbf{MIT Syncopasian A Cappella Group}
+\hfill Cambridge, MA
+\par
+President
+\hfill
+\DatestampYM{2010}{02} --
+\DatestampYM{2012}{06}
+\begin{detail}
+Conducted regular group meetings and coordinated performances including bi-annual concerts. 
+\end{detail}
+\textbf{Next Act}
+\hfill Cambridge, MA
+\par
+Vocal Director
+\hfill
+\DatestampYM{2012}{01} --
+\DatestampYM{2012}{04}
+\begin{detail}
+Lead weekly vocal rehearsals for a 20-performer ensemble.
+\end{detail}
+
+
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+%\section
+%{Interests}
+%{Interests}
+%{PDF:Interests}
+%
+%Digital photography,
+%typography,
+%swimming.
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+%\section
+%{References}
+%{References}
+%{PDF:References}
+
+%\textbf{Professor Jonathan Public}
+%\par
+%Professor of Geology and Mechanical Engineering
+%\begin{detail}
+%First American University
+%\par
+%Department of Geophysical Engineering
+%\par
+%1000 First Avenue, Springfield, Massachusetts 22222, USA
+%\par
+%\href{mailto:jonathanpublic@example.com}
+%{jonathanpublic@example.com}
+%\,\BulletSymbol\,
+%+1\,(555)\,222-2222
+%\end{detail}
+%
+%\EntryGap
+%\textbf{Dr Alice Bob Carol}
+%\par
+%Director, Research \& Development
+%\begin{detail}
+%Alpha Engineering Firm
+%\par
+%20 North Street, Oakland, Ohio 33333, USA
+%\par
+%\href{mailto:alicebobcarol@example.com}
+%{alicebobcarol@example.com}
+%\,\BulletSymbol\,
+%+1\,(555)\,333-3333
+%\end{detail}
+
+
+
+\end{body}
+
+\end{document}
