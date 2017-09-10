@@ -34,14 +34,14 @@
 \input{CV-Preamble.tex}
 
 % CV Info (to be customized).
-\newcommand{\CVTitle}{Minshu Zhan's CV for company X}
-\newcommand{\CVNote}{CV compiled on {\today} for company X}
+\newcommand{\CVTitle}{Minshu Zhan's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
 
 % PDF settings and properties.
 \hypersetup{
 pdftitle={\CVTitle},
-pdfauthor={John Doe},
-pdfsubject={http://www.example.com/johndoe},
+pdfauthor={Minshu Zhan},
+pdfsubject={},
 pdfcreator={XeLaTeX},
 pdfproducer={},
 pdfkeywords={},
@@ -68,44 +68,92 @@ breaklinks}
 \title{Minshu Zhan}
 
 \begin{subtitle}
-5607 Heartwood Circle, Rockville, MD 20855
+45 Nixon Street, Boston, MA 02124
 \par
-\href{mailto:mzhan@mit.edu}
-{mzhan@mit.edu}
+\href{mailto:minshuzhan@gmail.edu}
+{minshuzhan@gmail.edu}
 \,\BulletSymbol\,
 +1\,(202)\,999-5564
 %\,\BulletSymbol\,
-%\href{http://www.example.com/johndoe}
-%{http://www.example.com/johndoe}
 \end{subtitle}
 
 \begin{body}
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Overview}
+{Overview}
+{PDF:Overview}
+Two years backend experience in object-oriented programming and data modeling. Three years of code-heavy research experiences. 
+Proficient in Java, Python, PostgreSql. Familiar with shell, redux pattern, javascript, HTML. Enjoy working tightly with problem-driven, fast-paced interdescriplinary teams. Care about delivering usable products.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Work Experience}
+{Work}
+{PDF:Work}
+
+\textbf{BevSpot}
+\hfill Boston, MA
+\par
+Software Engineer
+\hfill
+\DatestampYM{2016}{04} --
+present
+\BulletItem Designed backend of accounting functionality for inventory transfer between and implemented using java and postgresql; handled data migration
+\BulletItem maintanence of system featuring of multiple codebases and databases and frontend frameworks, transitioning from Django, naive javascript,document database to Java - postgres - redux
+\BulletItem built front-end of various pages in redux patterns with TypeScript
+\BulletItem implement digest email content and subscription end-to-end
+%\BulletItem work tightly with product, design, and customer support teams on improving user experience
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %% RESEARCH EXPERIENCE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section
-{Academic Projects}
-{Research}
-{PDF:Research}
+{Academic Experience}
+{Academic}
+{PDF:Academic}
 
-\textbf{LabROSA}, Columbia University  \par
-Project: Content-based collaborative filtering for music recommendation
-\BulletItem 
-\BulletItem
-\BulletItem  
+\textbf{LabROSA}, Columbia University
+\hfill New York, NY
+\par Graduate Researcher
+\hfill
+\DatestampYM{2015}{01} --
+\DatestampYM{2015}{05}
+\BulletItem Conceptualized a probabilistic model for music recommendation which uses audio content and peer usage
+information to infer the positions of users and songs in a common latent taste space.
+\BulletItem Extracted high quality audio content features for about a million songs using clustering-based vector quantization
+and a multilayer convolutional neural network.
+\BulletItem Overcame the “cold start” problem met by traditional content-blind recommendation approaches and achieved better performance than rival content-aware methods.
 
-\textbf{ALFA group}, MIT CSAIL
-\par Project: Program Auto-tuning Through Population-based Stochastic Search
+\textbf{Anyscale Learning for All Group}, MIT CSAIL
+\hfill Cambridge, MA
+\par Graduate Researcher
+\hfill
+\DatestampYM{2013}{09} --
+\DatestampYM{2014}{05}
 \BulletItem
-Implemented and optimized a set of discrete-domain stochastic search functionalities for the program auto-tuning system \emph{OpenTuner}, including genetic algorithm, particle swarm optimization, and differential evolution
+Augmented the program auto-tuning system \emph{OpenTuner} with a set of discrete-domain stochastic search algorithms, i.e. genetic algorithm, particle swarm optimization, and differential evolution. 
+\BulletItem
+Evaluated the system in multiple application domains and demonstrated that programs tuned by the extended
+system runs up to 4x faster than those tuned by the original system.
 
 \textbf{Personal Robots Group}, MIT Media Lab
-\par Project: interactive audio sample retrieval  
-\BulletItem performed vector quantization on 8 thousand audio samples, 
-\BulletItem effective retrieval through interaction
-\BulletItem Designed interface
+\hfill Cambridge, MA
+\par Graduate Researcher
+\hfill
+\DatestampYM{2013}{02} --
+\DatestampYM{2013}{08}
+\BulletItem Created a graphical interactive query-by-example audio retrieval software that allows the user to control the
+direction of search and improve the results through feedback.
+\BulletItem Delivered video demonstration and conference-style paper.
  
 
 \textbf{Speech Communication Group},
@@ -118,31 +166,26 @@ Undergraduate Research Student
 \DatestampYM{2013}{06}
 \begin{detail}
 \BulletItem
-Project:
-Modelling Acoustic Landmarks for Speech Recognition	
-\BulletItem
-Contribution:
-Designed features 
-Implemented a tree-based classifier for predicting behaviors of \emph{acoustic landmarks} in speech production based on prosodic context. 
-Confirmed
- \end{detail}
-
-\SmallEntryGap
-
-\textbf{Future Urban Mobility Group}, Singapore-MIT Alliance for Res. \& Tech.
-\hfill Singapore
-\par
-Undergraduate Research Student
-\hfill
-\DatestampYM{2011}{06} --
-\DatestampYM{2011}{08}
-\begin{detail}
-\BulletItem
-Project:
-Integrated Transportation Simulation Platform: SimMobility
-\BulletItem
-Contribution: Developed a large-scale GIS map interaction tool.
+Implemented a tree-based classifier that predicts changes of speech acoustic landmarks based on their prosodic
+contexts; engineered and selected features for the classification task.
 \end{detail}
+
+%\SmallEntryGap
+%
+%\textbf{Future Urban Mobility Group}, Singapore-MIT Alliance for Res. \& Tech.
+%\hfill Singapore
+%\par
+%Undergraduate Research Student
+%\hfill
+%\DatestampYM{2011}{06} --
+%\DatestampYM{2011}{08}
+%\begin{detail}
+%\BulletItem
+%Project:
+%Integrated Transportation Simulation Platform: SimMobility
+%\BulletItem
+%Contribution: Developed a large-scale GIS map interaction tool.
+%\end{detail}
 
 
 %%%%%%%%%%%%%%%
@@ -157,18 +200,15 @@ Contribution: Developed a large-scale GIS map interaction tool.
 \textbf{Columbia University}
 \hfill New York, NY
 \par
-Ph.D in Signal Processing 
+Ph.D in Signal Processing (discontinued)
 \hfill
-\DatestampYM{2014}{09} --
-present
+\DatestampYM{2014}{09} -- \DatestampYM{2015}{12}
 \begin{detail}
 \BulletItem
 Research areas:
 music information retrieval, machine learning
-\BulletItem
-Relevant coursework:
-Foundations of Graphical Models, Speech \& Audio Processing and Recognition
 \end{detail}
+
 \SmallEntryGap
 
 \textbf{Massachusetts Institute of Technology}
@@ -181,13 +221,7 @@ Computer Science
 \DatestampYM{2014}{06}
 \begin{detail}
 \BulletItem
-Thesis:
-Program Auto-tuning Through Population-based Stochastic Search
-\BulletItem
 Concentration: Artificial Intelligence
-\BulletItem
-Relevant coursework: 
-
 \BulletItem
 Cumulative GPA: 4.5 / 5.0
 \end{detail}
@@ -205,30 +239,30 @@ Cumulative GPA: 4.3 / 5.0
 %% OTHER WORK EXPERIENCE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section
-{Work Experience}
-{Other Work Experience}
-{PDF:OtherWorkExperience}
-
-\textbf{Introduction to EECS},
-MIT \hfill Cambridge, MA
-\par
-Lab Assistant
-\hfill
-\DatestampYM{2013}{02} --
-\DatestampYM{2013}{05}
-% detail?
-
-\EntryGap
-
-\textbf{Digital Communication System},
-MIT \hfill Cambridge, MA
-\par
-Teaching Assistant
-\hfill
-\DatestampYM{2012}{09} --
-\DatestampYM{2012}{12}
-% detail?
+%\section
+%{Work Experience}
+%{Other Work Experience}
+%{PDF:OtherWorkExperience}
+%
+%\textbf{Introduction to EECS},
+%MIT \hfill Cambridge, MA
+%\par
+%Lab Assistant
+%\hfill
+%\DatestampYM{2013}{02} --
+%\DatestampYM{2013}{05}
+%% detail?
+%
+%\EntryGap
+%
+%\textbf{Digital Communication System},
+%MIT \hfill Cambridge, MA
+%\par
+%Teaching Assistant
+%\hfill
+%\DatestampYM{2012}{09} --
+%\DatestampYM{2012}{12}
+%% detail?
 
 
 %%%%%%%%%%%%%%%%%%
@@ -272,59 +306,35 @@ Málaga, Spain,
 \DatestampYM{2011}{06}
 
 
-
-
-
-%%%%%%%%%%%%
-%% SKILLS %%
-%%%%%%%%%%%%
-
-\section
-{Skills}
-{Skills}
-{PDF:Skills}
-
-\textbf{Programming}
-\par
-Fluent: Python, MATLAB, {\LaTeX}, Java  \par
-Familiar: C, C++, JavaScript, Shell, SQL, HTML, Scheme
-
-\EntryGap
-
-\textbf{Natural Language}
-\par
-Chinese (fluent)
-
-
 %%%%%%%%%%%%%%%%%%%%%%%
 %% CAMPUS ACTIVITIES %%
 %%%%%%%%%%%%%%%%%%%%%%%
-
-\section
-{Campus Activities}
-{Campus Activities}
-{PDF:CampusActivities}
-
-\textbf{MIT Syncopasian A Cappella Group}
-\hfill Cambridge, MA
-\par
-President
-\hfill
-\DatestampYM{2010}{02} --
-\DatestampYM{2012}{06}
-\begin{detail}
-Conducted regular group meetings and coordinated performances including bi-annual concerts. 
-\end{detail}
-\textbf{Next Act}
-\hfill Cambridge, MA
-\par
-Vocal Director
-\hfill
-\DatestampYM{2012}{01} --
-\DatestampYM{2012}{04}
-\begin{detail}
-Lead weekly vocal rehearsals for a 20-performer ensemble.
-\end{detail}
+%
+%\section
+%{Campus Activities}
+%{Campus Activities}
+%{PDF:CampusActivities}
+%
+%\textbf{MIT Syncopasian A Cappella Group}
+%\hfill Cambridge, MA
+%\par
+%President
+%\hfill
+%\DatestampYM{2010}{02} --
+%\DatestampYM{2012}{06}
+%\begin{detail}
+%Conducted regular group meetings and coordinated performances including bi-annual concerts. 
+%\end{detail}
+%\textbf{Next Act}
+%\hfill Cambridge, MA
+%\par
+%Vocal Director
+%\hfill
+%\DatestampYM{2012}{01} --
+%\DatestampYM{2012}{04}
+%\begin{detail}
+%Lead weekly vocal rehearsals for a 20-performer ensemble.
+%\end{detail}
 
 
 
